@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://creepycloud.example/sitemap.xml
+Sitemap: https://crazycloud.example/sitemap.xml

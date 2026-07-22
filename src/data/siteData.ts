@@ -49,7 +49,7 @@ export const features = [
 ] as const
 
 export const testimonials = [
-  { name: 'PixelPioneer', role: 'Skyblock network owner', review: 'We moved 2,000 concurrent players to Creepy Cloud and the difference was immediate. No more panic during events.', initial: 'P', color: 'from-violet-400 to-fuchsia-500' },
+  { name: 'PixelPioneer', role: 'Skyblock network owner', review: 'We moved 2,000 concurrent players to Crazy Cloud and the difference was immediate. No more panic during events.', initial: 'P', color: 'from-violet-400 to-fuchsia-500' },
   { name: 'MossyMason', role: 'Modded SMP creator', review: 'The panel is exactly what I wanted: incredibly clean, fast to use, and backups are completely effortless.', initial: 'M', color: 'from-cyan-300 to-blue-500' },
   { name: 'EnderLynx', role: 'Community manager', review: 'Support feels like an extension of our team. They helped us tune our setup and our TPS has been flawless.', initial: 'E', color: 'from-pink-400 to-orange-400' },
 ]

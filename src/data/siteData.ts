@@ -66,9 +66,33 @@ export const comparisonRows = [
 ]
 
 export const footerGroups = [
-  { title: 'Hosting', links: ['Minecraft Servers', 'VPS Hosting', 'Bot Hosting', 'Status'] },
-  { title: 'Company', links: ['About us', 'Contact', 'Careers', 'Partners'] },
-  { title: 'Resources', links: ['Support Center', 'Knowledge Base', 'System Status', 'Affiliates'] },
+  {
+    title: 'Hosting',
+    links: [
+      { label: 'Minecraft Servers', slug: 'minecraft-servers' },
+      { label: 'VPS Hosting', slug: 'vps-hosting' },
+      { label: 'Bot Hosting', slug: 'bot-hosting' },
+      { label: 'Status', slug: 'status' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'About us', slug: 'about-us' },
+      { label: 'Contact', slug: 'contact' },
+      { label: 'Careers', slug: 'careers' },
+      { label: 'Partners', slug: 'partners' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { label: 'Support Center', slug: 'support-center' },
+      { label: 'Knowledge Base', slug: 'knowledge-base' },
+      { label: 'System Status', slug: 'system-status' },
+      { label: 'Affiliates', slug: 'affiliates' },
+    ],
+  },
 ]
 
 export const decorativeIcons = [Database, Layers3]

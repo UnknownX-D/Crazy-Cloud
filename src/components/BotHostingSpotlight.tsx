@@ -11,7 +11,7 @@ const botFeatures = [
 
 export function BotHostingSpotlight() {
   return <section id="bots" className="scroll-mt-28 px-5 py-20 sm:py-28">
-    <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl border border-emerald-300/15 bg-gradient-to-br from-emerald-400/[.11] via-[#0d1510] to-[#080b09] p-6 shadow-[0_0_75px_rgba(52,211,153,.08)] sm:p-10 lg:p-12">
+    <div className="section-shell relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-400/[.11] via-[#0d1510] to-[#080b09] p-6 shadow-[0_0_75px_rgba(52,211,153,.08)] sm:p-10 lg:p-12">
       <div aria-hidden className="absolute -right-24 -top-28 h-80 w-80 rounded-full bg-lime-400/10 blur-[100px]" />
       <div className="relative grid items-center gap-12 lg:grid-cols-[.9fr_1.1fr]">
         <div><SectionHeading align="left" eyebrow="DISCORD BOT HOSTING" title={<>Your Discord bot, <span className="text-gradient">always awake.</span></>}>Give your community a reliable companion with fast, always-on infrastructure designed for modern Node.js and Python bots.</SectionHeading>

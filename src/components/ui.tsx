@@ -6,9 +6,9 @@ type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onAnimationSta
 
 export function Button({ children, variant = 'primary', className = '', ...props }: ButtonProps) {
   const styles = {
-    primary: 'bg-gradient-to-r from-emerald-300 to-lime-300 text-emerald-950 shadow-[0_0_26px_rgba(52,211,153,.18)] hover:from-emerald-200 hover:to-lime-200',
-    secondary: 'border border-white/15 bg-white/[.055] text-white hover:border-emerald-400/70 hover:bg-emerald-500/15',
-    ghost: 'text-zinc-300 hover:text-white',
+    primary: 'bg-gradient-to-r from-emerald-300 to-lime-300 text-emerald-950 shadow-[0_0_24px_rgba(52,211,153,.16)] hover:from-emerald-200 hover:to-lime-200',
+    secondary: 'border border-white/15 bg-white/[.045] text-white backdrop-blur-sm hover:border-emerald-400/70 hover:bg-emerald-500/15',
+    ghost: 'text-zinc-300 hover:text-white hover:bg-white/[.05]',
   }
   return <motion.button whileHover={{ y: -2 }} whileTap={{ scale: .97 }} className={`inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-[#08080b] ${styles[variant]} ${className}`} {...props}>{children}</motion.button>
 }

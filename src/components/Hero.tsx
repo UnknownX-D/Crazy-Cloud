@@ -1,10 +1,9 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowRight, MessageCircle, Play, Server, ShieldCheck, Zap } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Button } from './ui'
 
-const DISCORD_URL = 'https://discord.gg/JQn642Mheh'
+const DISCORD_URL = 'https://discord.gg/5AspwFP8Yj'
 
 const bars = [21, 58, 84, 32, 18, 76, 28, 18, 61]
 
@@ -45,7 +44,7 @@ export function Hero() {
       <div className="relative z-10 max-w-2xl"><motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-7 flex items-center gap-2 text-[10px] font-bold tracking-[.18em] text-zinc-300"><span className="h-2 w-2 bg-lime-300 shadow-[0_0_8px_#bef264]" />NEW-GEN GAME INFRASTRUCTURE</motion.p>
         <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .1 }} className="font-display text-[3.55rem] font-semibold uppercase leading-[.82] tracking-[-.065em] text-white sm:text-7xl lg:text-[5.3rem]"><span className="block">Power your</span><span className="outline-title mt-3 block">Minecraft</span><span className="outline-title mt-3 block">world</span></motion.h1>
         <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .55, delay: .24 }} className="mt-8 max-w-xl text-sm leading-7 text-zinc-400 sm:text-base">Premium Minecraft servers, VPS, and bot hosting with blazing performance — built for creators who refuse to lag.</motion.p>
-        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .55, delay: .35 }} className="mt-8 flex flex-wrap gap-3"><Link to="/signup"><Button className="clip-button rounded-none px-6 py-3.5 text-[11px] uppercase tracking-wider">Get Started <ArrowRight size={15} /></Button></Link><a href="#pricing"><Button variant="secondary" className="clip-button rounded-none px-6 py-3.5 text-[11px] uppercase tracking-wider">View Plans <Play size={13} /></Button></a><a href={DISCORD_URL} target="_blank" rel="noreferrer"><Button variant="ghost" className="px-2 py-3.5 text-[11px] uppercase tracking-wider text-lime-200 hover:text-lime-100"><MessageCircle size={15} />Discord</Button></a></motion.div>
+        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .55, delay: .35 }} className="mt-8 flex flex-wrap gap-3"><a href={DISCORD_URL} target="_blank" rel="noreferrer"><Button className="clip-button rounded-none px-6 py-3.5 text-[11px] uppercase tracking-wider">Join Discord <ArrowRight size={15} /></Button></a><a href="#pricing"><Button variant="secondary" className="clip-button rounded-none px-6 py-3.5 text-[11px] uppercase tracking-wider">View Plans <Play size={13} /></Button></a></motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .6 }} className="mt-12 grid max-w-md grid-cols-3 gap-6"><HeroStat value="99.99%" label="Network uptime" /><HeroStat value="<20ms" label="Average latency" /><HeroStat value="12" label="Global regions" /></motion.div>
       </div>
       <ServerRack />

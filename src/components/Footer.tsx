@@ -16,8 +16,8 @@ export function CTA() {
 					<h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">Ready to launch your server?</h2>
 					<p className="mx-auto mt-5 max-w-lg text-zinc-300">Deploy your Minecraft server in under 60 seconds with Crazy Cloud.</p>
 					<div className="mt-8 flex flex-wrap justify-center gap-3">
-						<a href="#pricing"><Button>Deploy Now <ArrowRight size={16} /></Button></a>
-						<Link to="/signup"><Button variant="secondary">Create Account</Button></Link>
+						<a href="#pricing"><Button>View Plans <ArrowRight size={16} /></Button></a>
+						<a href="https://discord.gg/5AspwFP8Yj" target="_blank" rel="noreferrer"><Button variant="secondary">Join Discord</Button></a>
 					</div>
 				</div>
 			</div>

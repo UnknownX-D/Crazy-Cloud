@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import { Activity, Bot, Check, Code2, GitBranch, MessageCircle, TerminalSquare } from 'lucide-react'
-import { Link } from 'react-router-dom'
 import { Button, SectionHeading } from './ui'
+
+const DISCORD_URL = 'https://discord.gg/5AspwFP8Yj'
 
 const botFeatures = [
   ['Always online', 'Intelligent auto-restarts keep your bot present when your community needs it.', Activity],
@@ -16,7 +17,7 @@ export function BotHostingSpotlight() {
       <div className="relative grid items-center gap-12 lg:grid-cols-[.9fr_1.1fr]">
         <div><SectionHeading align="left" eyebrow="DISCORD BOT HOSTING" title={<>Your Discord bot, <span className="text-gradient">always awake.</span></>}>Give your community a reliable companion with fast, always-on infrastructure designed for modern Node.js and Python bots.</SectionHeading>
           <div className="mt-8 space-y-4">{botFeatures.map(([title, description, Icon]) => { const FeatureIcon = Icon as typeof Bot; return <div key={title as string} className="flex gap-3"><span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-emerald-300/15 bg-emerald-400/[.08] text-emerald-200"><FeatureIcon size={17} /></span><div><p className="text-sm font-bold text-white">{title as string}</p><p className="mt-1 text-xs leading-5 text-zinc-500">{description as string}</p></div></div> })}</div>
-          <div className="mt-9 flex flex-wrap gap-3"><Link to="/signup"><Button>Deploy a Bot <Bot size={16} /></Button></Link><a href="#bot-pricing"><Button variant="secondary">Bot Plans</Button></a></div>
+          <div className="mt-9 flex flex-wrap gap-3"><a href={DISCORD_URL} target="_blank" rel="noreferrer"><Button>Deploy a Bot <Bot size={16} /></Button></a><a href="#bot-pricing"><Button variant="secondary">Bot Plans</Button></a></div>
         </div>
         <motion.div initial={{ opacity: 0, x: 18 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative rounded-2xl border border-white/[.1] bg-[#080d0a] p-4 shadow-2xl shadow-black/40 sm:p-5">
           <div className="flex items-center justify-between border-b border-white/[.07] pb-4"><div className="flex items-center gap-3"><span className="grid h-10 w-10 place-items-center rounded-xl bg-[#5865F2]/15 text-[#aeb5ff]"><MessageCircle size={19} /></span><div><p className="text-sm font-bold text-white">crazy-status-bot</p><p className="mt-0.5 text-[10px] text-emerald-300">● ONLINE · 42 servers</p></div></div><span className="rounded-full bg-emerald-400/10 px-2.5 py-1 text-[10px] font-bold text-emerald-300">DEPLOYED</span></div>

@@ -1,4 +1,4 @@
-import { ArrowRight, GitFork as Github, MessageCircle as Twitter, RadioTower as Youtube, Send } from 'lucide-react'
+import { ArrowRight, GitFork as Github, MessageCircle, Globe, Send } from 'lucide-react'
 import { Brand } from './Brand'
 import { Link } from 'react-router-dom'
 import { footerGroups } from '../data/siteData'
@@ -9,7 +9,7 @@ export function CTA() {
 		<section id="contact" className="scroll-mt-24 px-5 py-20 sm:py-28">
 			<div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl border border-emerald-300/20 bg-gradient-to-br from-emerald-600/20 via-[#0d1510] to-lime-900/15 px-6 py-14 text-center shadow-[0_0_80px_rgba(52,211,153,.12)] sm:px-12 sm:py-20">
 
-				<div className="absolute -left-20 -top-20 h-56 h-56 rounded-full bg-emerald-400/20 blur-[80px]" />
+				<div className="absolute -left-20 -top-20 h-56 w-56 rounded-full bg-emerald-400/20 blur-[80px]" />
 				<div className="absolute -bottom-28 -right-10 h-64 w-64 rounded-full bg-lime-400/15 blur-[100px]" />
 
 				<div className="relative mx-auto max-w-2xl">
@@ -72,12 +72,14 @@ export function Footer() {
 
 						<div className="mt-5 flex gap-2">
 
-							{[Send, Github, Twitter, Youtube].map((Icon, i) => (
+{[{ Icon: Github, label: 'GitHub', url: 'https://github.com' }, { Icon: MessageCircle, label: 'Discord', url: 'https://discord.gg/5AspwFP8Yj' }, { Icon: Globe, label: 'YouTube', url: 'https://youtube.com' }, { Icon: Send, label: 'Telegram', url: 'https://t.me' }].map(({ Icon, label, url }) => (
 
 								<a
-									key={i}
-									href="#home"
-									aria-label="Social link"
+									key={label}
+									href={url}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={label}
 									className="grid h-9 w-9 place-items-center rounded-lg border border-white/[.09] text-zinc-400 transition hover:border-emerald-300/30 hover:text-emerald-300"
 								>
 

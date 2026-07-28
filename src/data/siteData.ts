@@ -17,12 +17,12 @@ export const hostingCategories: HostingCategory[] = [
 
 export const minecraftPlans: Plan[] = [
   { name: 'Dirt', price: '2.99', detail: 'Perfect for a first world', features: ['2GB RAM', '2 CPU Cores', '20GB SSD', '10 Players', 'Basic Support'], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Stone', price: '5.99', detail: 'For lively communities', features: ['4GB RAM', '3 CPU Cores', '50GB SSD', 'Plugin Support', '30 Players'], badge: 'Most Popular', featured: true, icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Diamond', price: '12.99', detail: 'Built for big ambitions', features: ['8GB RAM', '5 CPU Cores', '100GB NVMe', 'Unlimited Players', 'Premium Support'], badge: 'High Performance', icon: Gem, iconStyle: 'border-cyan-300/40 bg-cyan-300/[.06] text-cyan-200' },
-  { name: 'Netherite', price: '24.99', detail: 'Unrelenting performance', features: ['16GB RAM', '8 CPU Cores', '200GB NVMe', 'Dedicated Resources', 'Priority Support'], icon: ShieldCheck, iconStyle: 'border-fuchsia-300/30 bg-fuchsia-300/[.05] text-fuchsia-200' },
-  { name: 'Iron', price: '4.99', detail: 'Perfect for growing survival servers', features: ['3GB RAM', '2 CPU Cores', '35GB NVMe SSD', '20 Players', 'Daily Backups'], icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Stone', price: '4.99', detail: 'Perfect for growing survival servers', features: ['3GB RAM', '2 CPU Cores', '35GB NVMe SSD', '20 Players', 'Daily Backups'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Iron', price: '5.99', detail: 'For lively communities', features: ['4GB RAM', '3 CPU Cores', '50GB SSD', 'Plugin Support', '30 Players'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
   { name: 'Gold', price: '8.99', detail: 'Built for active communities', features: ['6GB RAM', '4 CPU Cores', '80GB NVMe SSD', '50 Players', 'Plugin Support'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+  { name: 'Diamond', price: '12.99', detail: 'Built for big ambitions', features: ['8GB RAM', '5 CPU Cores', '100GB NVMe', 'Unlimited Players', 'Premium Support'], badge: 'High Performance', icon: Gem, iconStyle: 'border-cyan-300/40 bg-cyan-300/[.06] text-cyan-200' },
   { name: 'Emerald', price: '16.99', detail: 'Power your growing network', features: ['12GB RAM', '6 CPU Cores', '150GB NVMe SSD', 'Unlimited Players', 'Premium Support'], badge: 'POPULAR', icon: Zap, iconStyle: 'border-emerald-400/40 bg-emerald-400/[.08] text-emerald-300' },
+  { name: 'Netherite', price: '24.99', detail: 'Unrelenting performance', features: ['16GB RAM', '8 CPU Cores', '200GB NVMe', 'Dedicated Resources', 'Priority Support'], icon: ShieldCheck, iconStyle: 'border-fuchsia-300/30 bg-fuchsia-300/[.05] text-fuchsia-200' },
   { name: 'End', price: '34.99', detail: 'Maximum power. Zero compromises', features: ['24GB RAM', '12 CPU Cores', '350GB NVMe SSD', 'Dedicated Resources', 'Priority Support'], badge: 'ULTIMATE', icon: Orbit, iconStyle: 'border-purple-400/40 bg-purple-400/[.08] text-purple-300' },
 ]
 
@@ -63,14 +63,14 @@ export const stats = [
 ]
 
 export const comparisonRows = [
-  ['Dirt', '2GB', '2 Cores', '20GB SSD', '10', 'Basic', 'Budget Friendly'],
-  ['Stone', '4GB', '3 Cores', '50GB SSD', '30', 'Standard', 'Most Popular'],
-  ['Diamond', '8GB', '5 Cores', '100GB NVMe', 'Unlimited', 'Premium', 'Best Value'],
-  ['Netherite', '16GB', '8 Cores', '200GB NVMe', 'Unlimited', 'Priority', 'High Performance'],
-  ['Iron', '3GB', '2 Cores', '35GB NVMe SSD', '20', 'Standard', 'Growing Survival'],
-  ['Gold', '6GB', '4 Cores', '80GB NVMe SSD', '50', 'Standard', 'Best Value'],
-  ['Emerald', '12GB', '6 Cores', '150GB NVMe SSD', 'Unlimited', 'Premium', 'Popular'],
-  ['End', '24GB', '12 Cores', '350GB NVMe SSD', 'Dedicated', 'Priority', 'Ultimate'],
+  ['Dirt', '2GB', '2 Cores', '20GB SSD', '10', 'Basic', 'Starter Tier'],
+  ['Stone', '3GB', '2 Cores', '35GB NVMe SSD', '20', 'Standard', 'Survival Tier'],
+  ['Iron', '4GB', '3 Cores', '50GB SSD', '30', 'Standard', 'Community Tier'],
+  ['Gold', '6GB', '4 Cores', '80GB NVMe SSD', '50', 'Standard', 'Advanced Tier'],
+  ['Diamond', '8GB', '5 Cores', '100GB NVMe', 'Unlimited', 'Premium', 'Pro Performance'],
+  ['Emerald', '12GB', '6 Cores', '150GB NVMe SSD', 'Unlimited', 'Premium', 'Ultra Performance'],
+  ['Netherite', '16GB', '8 Cores', '200GB NVMe', 'Unlimited', 'Priority', 'Extreme Power'],
+  ['End', '24GB', '12 Cores', '350GB NVMe SSD', 'Dedicated', 'Priority', 'Ultimate Power'],
 ]
 
 export const footerGroups = [

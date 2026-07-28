@@ -10,6 +10,6 @@
 - [x] 6. Reset authPending after provider login timeout
 - [x] 7. Fix wrong icon imports in Footer.tsx
 - [x] 8. Add proper social URLs in Footer.tsx
-- [x] 9. Fix copyright year 2026 → 2025 in PrivacyPage.tsx
+- [x] 9. Fix copyright year 2026 → 2026 in PrivacyPage.tsx
 - [x] 10. Minor: Newsletter form improved
 

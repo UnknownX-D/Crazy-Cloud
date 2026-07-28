@@ -140,7 +140,7 @@ export default function PrivacyPage() {
         </div>
 
         <p className="mt-6 text-sm font-medium text-zinc-200">
-          © 2025 Crazy Cloud • All Rights Reserved
+          © 2026 Crazy Cloud • All Rights Reserved
         </p>
       </div>
 

@@ -189,7 +189,7 @@ export function Footer() {
 
 
                     <p>
-                        © 2025 Crazy Cloud. Built for better worlds.
+                        © 2026 Crazy Cloud. Built for better worlds.
                     </p>
 
 

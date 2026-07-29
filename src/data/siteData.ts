@@ -24,14 +24,14 @@ export const minecraftPlans: Plan[] = [
 
 export const miniPlans = {
   vps: [
-    { name: 'Budget VPS', specs: ['2GB RAM', '2 vCPU', '40GB SSD'], price: '4.99' },
-    { name: 'Performance VPS', specs: ['8GB RAM', '4 vCPU', '120GB NVMe'], price: '14.99' },
-    { name: 'Enterprise VPS', specs: ['16GB RAM', '8 vCPU', '250GB NVMe'], price: '29.99' },
+    { name: 'Budget VPS', specs: ['2GB RAM', '2 vCPU', '40GB SSD'], price: 'Soon' },
+    { name: 'Performance VPS', specs: ['8GB RAM', '4 vCPU', '120GB NVMe'], price: 'Soon' },
+    { name: 'Enterprise VPS', specs: ['16GB RAM', '8 vCPU', '250GB NVMe'], price: 'Soon' },
   ],
   bots: [
-    { name: 'Starter Bot', specs: ['512MB RAM', 'Python', 'Node.js'], price: '1.99' },
-    { name: 'Pro Bot', specs: ['2GB RAM', 'Auto Restart', 'Logs & Backups'], price: '5.99' },
-    { name: 'Unlimited Bot', specs: ['4GB RAM', 'Multiple Bots', 'Priority Resources'], price: '11.99' },
+    { name: 'Starter Bot', specs: ['512MB RAM', 'Python', 'Node.js'], price: 'Soon' },
+    { name: 'Pro Bot', specs: ['2GB RAM', 'Auto Restart', 'Logs & Backups'], price: 'Soon' },
+    { name: 'Unlimited Bot', specs: ['4GB RAM', 'Multiple Bots', 'Priority Resources'], price: 'Soon' },
   ],
 }
 

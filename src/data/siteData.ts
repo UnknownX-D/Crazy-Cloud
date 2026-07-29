@@ -59,10 +59,10 @@ export const stats = [
 ]
 
 export const comparisonRows = [
-  ['Dirt', '2GB', '2 Cores', '20GB SSD', '10', 'Basic', 'Starter Tier'],
-  ['Stone', '3GB', '2 Cores', '35GB NVMe SSD', '20', 'Standard', 'Survival Tier'],
-  ['Iron', '4GB', '3 Cores', '50GB SSD', '30', 'Standard', 'Community Tier'],
-  ['Gold', '6GB', '4 Cores', '80GB NVMe SSD', '50', 'Standard', 'Advanced Tier'],
+  ['Starter', '4GB', '200% CPU', '30GB SSD', 'Small', 'Basic', 'Starter Tier'],
+  ['Pro', '6GB', '300% CPU', '60GB SSD', 'Medium', 'Priority', 'Community Tier'],
+  ['Elite', '8GB', '400% CPU', '80GB SSD', 'Large', 'Advanced', 'Network Tier'],
+  ['Supreme', '12GB', '700% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
 ]
 
 export const footerGroups = [

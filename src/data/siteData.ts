@@ -16,10 +16,10 @@ export const hostingCategories: HostingCategory[] = [
 ]
 
 export const minecraftPlans: Plan[] = [
-  { name: 'Dirt', price: '2.99', detail: 'Perfect for a first world', features: ['2GB RAM', '2 CPU Cores', '20GB SSD', '10 Players', 'Basic Support'], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Stone', price: '4.99', detail: 'Perfect for growing survival servers', features: ['3GB RAM', '2 CPU Cores', '35GB NVMe SSD', '20 Players', 'Daily Backups'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Iron', price: '5.99', detail: 'For lively communities', features: ['4GB RAM', '3 CPU Cores', '50GB SSD', 'Plugin Support', '30 Players'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
-  { name: 'Gold', price: '8.99', detail: 'Built for active communities', features: ['6GB RAM', '4 CPU Cores', '80GB NVMe SSD', '50 Players', 'Plugin Support'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+  { name: 'Starter', price: '29', detail: 'Perfect for a first world', features: ['4GB RAM', '200% CPU', '30GB SSD', 'Unlimited Players', '24/7 Support' ], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Pro', price: '39', detail: 'Perfect for growing survival servers', features: ['6GB RAM', '300% CPU', '60GB SSD', 'Unlimited Players', '24/7 Support'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Elite', price: '49', detail: 'For lively communities', features: ['8GB RAM', '400% CPU', '80GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Supreme', price: '69', detail: 'Built for active communities', features: ['12GB RAM', '700% CPU', '100GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
 ]
 
 export const miniPlans = {
@@ -59,9 +59,9 @@ export const stats = [
 ]
 
 export const comparisonRows = [
-  ['Starter', '4GB', '200% CPU', '30GB SSD', 'Small', 'Basic', 'Starter Tier'],
-  ['Pro', '6GB', '300% CPU', '60GB SSD', 'Medium', 'Priority', 'Community Tier'],
-  ['Elite', '8GB', '400% CPU', '80GB SSD', 'Large', 'Advanced', 'Network Tier'],
+  ['Starter', '4GB', '200% CPU', '30GB SSD', 'Unlimited', 'Basic', 'Starter Tier'],
+  ['Pro', '6GB', '300% CPU', '60GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
+  ['Elite', '8GB', '400% CPU', '80GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
   ['Supreme', '12GB', '700% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
 ]
 

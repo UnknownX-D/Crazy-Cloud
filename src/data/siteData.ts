@@ -16,10 +16,10 @@ export const hostingCategories: HostingCategory[] = [
 ]
 
 export const minecraftPlans: Plan[] = [
-  { name: 'Starter', price: '29', detail: 'Perfect for a first world', features: ['4GB RAM', '200% CPU', '30GB SSD', 'Unlimited Players', '24/7 Support' ], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Pro', price: '39', detail: 'Perfect for growing survival servers', features: ['6GB RAM', '300% CPU', '60GB SSD', 'Unlimited Players', '24/7 Support'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Elite', price: '49', detail: 'For lively communities', features: ['8GB RAM', '400% CPU', '80GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
-  { name: 'Supreme', price: '69', detail: 'Built for active communities', features: ['12GB RAM', '700% CPU', '100GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+  { name: 'Starter', price: '39', detail: 'Perfect for a first world', features: ['4GB RAM', '200% CPU', '30GB SSD', 'Unlimited Players', '24/7 Support' ], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Pro', price: '49', detail: 'Perfect for growing survival servers', features: ['6GB RAM', '300% CPU', '60GB SSD', 'Unlimited Players', '24/7 Support'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Elite', price: '59', detail: 'For lively communities', features: ['8GB RAM', '400% CPU', '80GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Supreme', price: '79', detail: 'Built for active communities', features: ['12GB RAM', '700% CPU', '100GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
 ]
 
 export const miniPlans = {

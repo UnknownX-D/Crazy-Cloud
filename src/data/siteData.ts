@@ -5,7 +5,7 @@ export type HostingCategory = { title: string; eyebrow: string; description: str
 export type Plan = { name: string; price: string; detail: string; features: string[]; badge?: string; featured?: boolean; icon: LucideIcon; iconStyle?: string }
 
 export const navigation = [
-  ['Home', '#home'], ['Minecraft Hosting', '#minecraft'], ['VPS Hosting', '#vps'], ['Bot Hosting', '#bots'],
+  ['Home', '#home'], ['Minecraft Hosting', '#pricing'], ['VPS Hosting', '#vps'], ['Bot Hosting', '#bots'],
   ['Features', '#features'], ['Pricing', '#pricing'], ['Support', '#support'], ['Contact', '#contact'],
 ]
 

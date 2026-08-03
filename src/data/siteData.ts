@@ -1,0 +1,106 @@
+import type { LucideIcon } from 'lucide-react'
+import { Activity, Bot, Box, Boxes, CloudCog, Coins, Database, Gamepad2, Globe2, HardDrive, Layers3, LockKeyhole, Rocket, Shield, ShieldCheck, Terminal, TimerReset, Zap } from 'lucide-react'
+
+export type HostingCategory = { title: string; eyebrow: string; description: string; icon: LucideIcon; features: string[]; gradient: string }
+export type Plan = { name: string; slug: string; price: string; detail: string; features: string[]; badge?: string; featured?: boolean; icon: LucideIcon; iconStyle?: string }
+
+export const navigation = [
+  ['Home', '#home'], ['Minecraft Hosting', '#pricing'], ['VPS Hosting', '#vps'], ['Bot Hosting', '#bots'],
+  ['Features', '#features'], ['Pricing', '#pricing'], ['Support', '#support'], ['Contact', '#contact'],
+]
+
+export const hostingCategories: HostingCategory[] = [
+  { title: 'Minecraft Hosting', eyebrow: 'THE FULL EXPERIENCE', description: 'Lag-free worlds built for every adventure, from intimate survival servers to sprawling networks.', icon: Gamepad2, features: ['Instant Setup', 'Plugin & Mod Support', 'DDoS Protection', 'Automatic Backups'], gradient: 'from-emerald-500/20 to-lime-500/5' },
+  { title: 'VPS Hosting', eyebrow: 'UNCOMPROMISED POWER', description: 'Flexible virtual private servers with fast compute, complete control, and room to grow.', icon: Terminal, features: ['Full Root Access', 'AMD Ryzen CPUs', 'NVMe SSD', 'Dedicated IP'], gradient: 'from-emerald-400/15 to-teal-500/5' },
+  { title: 'Discord Bot Hosting', eyebrow: 'ALWAYS ONLINE', description: 'Keep your community moving with dependable bot infrastructure made for every stack.', icon: Bot, features: ['Node.js & Python', 'Auto Restart', 'Console Access', 'Git Integration'], gradient: 'from-lime-500/20 to-emerald-500/5' },
+]
+
+export const minecraftPlans: Plan[] = [
+  { name: 'Starter', slug: 'starter', price: '69', detail: 'Straightforward hosting for your first server', features: ['200% CPU', '4GB RAM', '30GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Basic', slug: 'basic', price: '79', detail: 'A balanced option for growing communities', features: ['300% CPU', '6GB RAM', '60GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Pro', slug: 'pro', price: '89', detail: 'Great for busy worlds and active players', features: ['400% CPU', '8GB RAM', '80GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Elite', slug: 'elite', price: '99', detail: 'Built for larger communities and heavier mods', features: ['700% CPU', '12GB RAM', '100GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+  { name: 'Supreme', slug: 'supreme', price: '119', detail: 'High-performance hosting for ambitious setups', features: ['1000% CPU', '16GB RAM', '150GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Popular', icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Ultimate', slug: 'ultimate', price: '129', detail: 'Our top-tier plan for maximum power', features: ['1200% CPU', '18GB RAM', '180GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Top Tier', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+  { name: 'Coming Soon', slug: 'coming-soon-1', price: 'Coming Soon', detail: 'More premium options are on the way', features: ['Custom upgrades', 'Priority availability', 'Launch soon'], badge: 'Coming Soon', icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Coming Soon', slug: 'coming-soon-2', price: 'Coming Soon', detail: 'Another high-end plan is being prepared', features: ['Expanded capacity', 'Advanced resources', 'Launch soon'], badge: 'Coming Soon', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+]
+
+export const miniPlans = {
+  vps: [
+    { name: 'Budget VPS', specs: ['2GB RAM', '2 vCPU', '40GB SSD'], price: 'Soon' },
+    { name: 'Performance VPS', specs: ['8GB RAM', '4 vCPU', '120GB NVMe'], price: 'Soon' },
+    { name: 'Enterprise VPS', specs: ['16GB RAM', '8 vCPU', '250GB NVMe'], price: 'Soon' },
+  ],
+  bots: [
+    { name: 'Starter Bot', specs: ['512MB RAM', 'Python', 'Node.js'], price: 'Soon' },
+    { name: 'Pro Bot', specs: ['2GB RAM', 'Auto Restart', 'Logs & Backups'], price: 'Soon' },
+    { name: 'Unlimited Bot', specs: ['4GB RAM', 'Multiple Bots', 'Priority Resources'], price: 'Soon' },
+  ],
+}
+
+export const features = [
+  ['DDoS Protection', 'Intelligent edge filtering protects your worlds around the clock.', ShieldCheck],
+  ['Instant Deployment', 'Start building in seconds with one-click server provisioning.', Rocket],
+  ['AMD Ryzen CPUs', 'High-clock performance that keeps every tick on time.', Zap],
+  ['NVMe Storage', 'Game files and world saves load with remarkable speed.', HardDrive],
+  ['Global Locations', 'Deploy closer to your players across 50+ locations.', Globe2],
+  ['Automatic Backups', 'Scheduled snapshots give every creation a safety net.', TimerReset],
+  ['Powerful Panel', 'A simple, beautiful control panel for total command.', CloudCog],
+  ['99.9% Uptime', 'Resilient infrastructure designed to stay out of your way.', Activity],
+  ['24/7 Monitoring', 'Our systems watch the servers, so you can watch the fun.', LockKeyhole],
+  ['One Click Installer', 'Launch curated modpacks and plugins without friction.', Box],
+] as const
+
+export const testimonials = [
+  { name: 'PixelPioneer', role: 'Skyblock network owner', review: 'We moved 2,000 concurrent players to Crazy Cloud and the difference was immediate. No more panic during events.', initial: 'P', color: 'from-violet-400 to-fuchsia-500' },
+  { name: 'MossyMason', role: 'Modded SMP creator', review: 'The panel is exactly what I wanted: incredibly clean, fast to use, and backups are completely effortless.', initial: 'M', color: 'from-cyan-300 to-blue-500' },
+  { name: 'EnderLynx', role: 'Community manager', review: 'Support feels like an extension of our team. They helped us tune our setup and our TPS has been flawless.', initial: 'E', color: 'from-pink-400 to-orange-400' },
+]
+
+export const stats = [
+  ['25,000+', 'Servers hosted'], ['99.99%', 'Network uptime'], ['50+', 'Global locations'], ['150,000+', 'Happy players'],
+]
+
+export const comparisonRows = [
+  ['Starter', '4GB', '200% CPU', '30GB SSD', 'Unlimited', 'Basic', 'Starter Tier'],
+  ['Basic', '6GB', '300% CPU', '60GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
+  ['Pro', '8GB', '400% CPU', '80GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
+  ['Elite', '12GB', '700% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
+  ['Supreme', '16GB', '1000% CPU', '150GB SSD', 'Unlimited', 'Premium', 'High Performance Tier'],
+  ['Ultimate', '18GB', '1200% CPU', '180GB SSD', 'Unlimited', 'Premium', 'Max Performance Tier'],
+  ['Coming Soon', '—', '—', '—', '—', '—', 'Upcoming Tier'],
+  ['Coming Soon', '—', '—', '—', '—', '—', 'Upcoming Tier'],
+]
+
+export const footerGroups = [
+  {
+    title: 'Hosting',
+    links: [
+      { label: 'Minecraft Servers', slug: 'minecraft-servers' },
+      { label: 'VPS Hosting', slug: 'vps-hosting' },
+      { label: 'Bot Hosting', slug: 'bot-hosting' },
+      { label: 'Status', slug: 'status' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'About us', slug: 'about-us' },
+      { label: 'Contact', slug: 'contact' },
+      { label: 'Careers', slug: 'careers' },
+      { label: 'Partners', slug: 'partners' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { label: 'Support Center', slug: 'support-center' },
+      { label: 'Knowledge Base', slug: 'knowledge-base' },
+      { label: 'System Status', slug: 'system-status' },
+      { label: 'Affiliates', slug: 'affiliates' },
+    ],
+  },
+]
+
+export const decorativeIcons = [Database, Layers3]

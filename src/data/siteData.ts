@@ -2,7 +2,11 @@ import type { LucideIcon } from 'lucide-react'
 import { Activity, Bot, Box, Boxes, CloudCog, Coins, Database, Gamepad2, Globe2, HardDrive, Layers3, LockKeyhole, Rocket, Shield, ShieldCheck, Terminal, TimerReset, Zap } from 'lucide-react'
 
 export type HostingCategory = { title: string; eyebrow: string; description: string; icon: LucideIcon; features: string[]; gradient: string }
+<<<<<<< HEAD
 export type Plan = { name: string; slug: string; price: string; detail: string; features: string[]; badge?: string; featured?: boolean; icon: LucideIcon; iconStyle?: string }
+=======
+export type Plan = { name: string; price: string; detail: string; features: string[]; badge?: string; featured?: boolean; icon: LucideIcon; iconStyle?: string }
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
 
 export const navigation = [
   ['Home', '#home'], ['Minecraft Hosting', '#pricing'], ['VPS Hosting', '#vps'], ['Bot Hosting', '#bots'],
@@ -16,6 +20,7 @@ export const hostingCategories: HostingCategory[] = [
 ]
 
 export const minecraftPlans: Plan[] = [
+<<<<<<< HEAD
   { name: 'Starter', slug: 'starter', price: '69', detail: 'Straightforward hosting for your first server', features: ['200% CPU', '4GB RAM', '30GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
   { name: 'Basic', slug: 'basic', price: '79', detail: 'A balanced option for growing communities', features: ['300% CPU', '6GB RAM', '60GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
   { name: 'Pro', slug: 'pro', price: '89', detail: 'Great for busy worlds and active players', features: ['400% CPU', '8GB RAM', '80GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
@@ -24,6 +29,12 @@ export const minecraftPlans: Plan[] = [
   { name: 'Ultimate', slug: 'ultimate', price: '129', detail: 'Our top-tier plan for maximum power', features: ['1200% CPU', '18GB RAM', '180GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Top Tier', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
   { name: 'Coming Soon', slug: 'coming-soon-1', price: 'Coming Soon', detail: 'More premium options are on the way', features: ['Custom upgrades', 'Priority availability', 'Launch soon'], badge: 'Coming Soon', icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
   { name: 'Coming Soon', slug: 'coming-soon-2', price: 'Coming Soon', detail: 'Another high-end plan is being prepared', features: ['Expanded capacity', 'Advanced resources', 'Launch soon'], badge: 'Coming Soon', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+=======
+  { name: 'Starter', price: '29', detail: 'Perfect for a first world', features: ['4GB RAM', '200% CPU', '30GB SSD', 'Unlimited Players', '24/7 Support' ], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Pro', price: '39', detail: 'Perfect for growing survival servers', features: ['6GB RAM', '300% CPU', '60GB SSD', 'Unlimited Players', '24/7 Support'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Elite', price: '49', detail: 'For lively communities', features: ['8GB RAM', '400% CPU', '80GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Supreme', price: '69', detail: 'Built for active communities', features: ['12GB RAM', '700% CPU', '100GB SSD', 'Unlimited Players', '24/7 Support'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
 ]
 
 export const miniPlans = {
@@ -64,6 +75,7 @@ export const stats = [
 
 export const comparisonRows = [
   ['Starter', '4GB', '200% CPU', '30GB SSD', 'Unlimited', 'Basic', 'Starter Tier'],
+<<<<<<< HEAD
   ['Basic', '6GB', '300% CPU', '60GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
   ['Pro', '8GB', '400% CPU', '80GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
   ['Elite', '12GB', '700% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
@@ -71,6 +83,11 @@ export const comparisonRows = [
   ['Ultimate', '18GB', '1200% CPU', '180GB SSD', 'Unlimited', 'Premium', 'Max Performance Tier'],
   ['Coming Soon', '—', '—', '—', '—', '—', 'Upcoming Tier'],
   ['Coming Soon', '—', '—', '—', '—', '—', 'Upcoming Tier'],
+=======
+  ['Pro', '6GB', '300% CPU', '60GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
+  ['Elite', '8GB', '400% CPU', '80GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
+  ['Supreme', '12GB', '700% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
 ]
 
 export const footerGroups = [

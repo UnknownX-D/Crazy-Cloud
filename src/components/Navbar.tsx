@@ -61,7 +61,10 @@ export function Navbar() {
       <div className="hidden items-center gap-2 md:flex">
         <a href={DISCORD_URL} target="_blank" rel="noreferrer" aria-label="Discord Bot Hosting"><Button variant="ghost" className="px-2 py-2 text-lime-200 hover:text-lime-100"><MessageCircle size={14} />Discord</Button></a>
         <a href={DISCORD_URL} target="_blank" rel="noreferrer"><Button variant="ghost" className="px-2 py-2 text-[11px]">Join Community</Button></a>
+<<<<<<< HEAD
         <a href={DISCORD_URL} target="_blank" rel="noreferrer"><Button variant="ghost" className="px-2 py-2 text-[11px]">Free Plan</Button></a>
+=======
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
         <a href={pathname === '/' ? '#pricing' : '/#pricing'} onClick={(e) => handleNavClick(e, '#pricing')}><Button className="clip-button rounded-none px-5 py-3 text-[10px] uppercase tracking-wide">View Plans <span className="text-base leading-none">›</span></Button></a>
       </div>
       <button onClick={() => setOpen(!open)} className="grid h-10 w-10 place-items-center rounded-lg text-white md:hidden" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}>{open ? <X /> : <Menu />}</button>
@@ -73,7 +76,11 @@ export function Navbar() {
           const isActive = activeSection === id
           return <a key={name} onClick={(e) => { close(); handleNavClick(e, href) }} href={pathname === '/' ? href : `/${href}`} className={`block rounded-xl px-4 py-3 text-sm font-medium transition ${isActive ? 'bg-white/8 text-white' : 'text-zinc-300 hover:bg-white/5 hover:text-white'}`}>{name}</a>
         })}
+<<<<<<< HEAD
         <div className="mt-2 grid grid-cols-2 gap-2 border-t border-white/10 pt-3"><a href={DISCORD_URL} target="_blank" rel="noreferrer" onClick={close}><Button variant="secondary" className="w-full"><MessageCircle size={14} />Discord</Button></a><a href={DISCORD_URL} target="_blank" rel="noreferrer" onClick={close}><Button className="w-full">Join Community</Button></a><a href={DISCORD_URL} target="_blank" rel="noreferrer" onClick={close}><Button variant="ghost" className="w-full">Free Plan</Button></a></div>
+=======
+        <div className="mt-2 grid grid-cols-2 gap-2 border-t border-white/10 pt-3"><a href={DISCORD_URL} target="_blank" rel="noreferrer" onClick={close}><Button variant="secondary" className="w-full"><MessageCircle size={14} />Discord</Button></a><a href={DISCORD_URL} target="_blank" rel="noreferrer" onClick={close}><Button className="w-full">Join Community</Button></a></div>
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
       </motion.div>}
     </AnimatePresence>
   </header>

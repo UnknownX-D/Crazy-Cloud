@@ -14,7 +14,11 @@ export default function PaymentPage() {
   const [copied, setCopied] = useState(false)
 
   const plan = minecraftPlans.find(
+<<<<<<< HEAD
     (p) => p.slug === planName?.toLowerCase() || p.name.toLowerCase() === planName?.toLowerCase()
+=======
+    (p) => p.name.toLowerCase() === planName?.toLowerCase()
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
   )
 
   useEffect(() => {
@@ -66,11 +70,19 @@ export default function PaymentPage() {
               {plan.name} Plan
             </h1>
             <div className="mt-3 flex items-baseline gap-1">
+<<<<<<< HEAD
               <span className="text-lg font-semibold text-lime-300">{plan.price === 'Coming Soon' ? '' : '₹'}</span>
               <span className="font-display text-4xl font-bold tracking-[-.06em] text-white">
                 {plan.price}
               </span>
               <span className="text-sm text-zinc-500">{plan.price === 'Coming Soon' ? '' : '/14 days'}</span>
+=======
+              <span className="text-lg font-semibold text-lime-300">₹</span>
+              <span className="font-display text-4xl font-bold tracking-[-.06em] text-white">
+                {plan.price}
+              </span>
+              <span className="text-sm text-zinc-500">/week</span>
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
             </div>
           </div>
 
@@ -131,6 +143,7 @@ export default function PaymentPage() {
               Payment Done — Join Discord for Verification
               <ExternalLink size={16} className="transition group-hover:translate-x-0.5" />
             </a>
+<<<<<<< HEAD
 
             <a
               href={DISCORD_INVITE}
@@ -141,6 +154,8 @@ export default function PaymentPage() {
               <ExternalLink size={16} />
               Other Payment Method — Join Discord
             </a>
+=======
+>>>>>>> 8d632e05e8c5dbab8d8dff9c2c1cba94f214d189
           </div>
 
           {/* Footer note */}

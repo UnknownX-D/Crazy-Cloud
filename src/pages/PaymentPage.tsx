@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom'
 import { ArrowLeft, CheckCircle, Copy, ExternalLink } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Brand } from '../components/Brand'
+import { Button } from '../components/ui'
 import { minecraftPlans } from '../data/siteData'
 
 const DISCORD_INVITE = 'https://discord.gg/5AspwFP8Yj'
@@ -76,74 +77,54 @@ export default function PaymentPage() {
 
           {/* Payment Section */}
           <div className="mb-10">
-            <h2 className="mb-6 font-display text-xl font-semibold text-white">
-              Complete Your Payment
-            </h2>
-
-            {/* JazzCash Number */}
-            <div className="mb-8 rounded-xl border border-emerald-300/20 bg-emerald-300/[.04] p-5">
-              <p className="text-[10px] font-bold uppercase tracking-[.2em] text-emerald-300">
-                Send Payment to JazzCash
-              </p>
-              <p className="mt-1 text-xs font-medium text-emerald-300/70">
-                Account: Sumaira Naseer
-              </p>
-              <div className="mt-3 flex items-center gap-3">
-                <span className="font-display text-2xl font-bold tracking-tight text-white">
-                  {JAZZCASH_NUMBER}
-                </span>
-                <button
-                  onClick={handleCopyNumber}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-white/[.08] bg-white/[.04] px-3 py-1.5 text-xs font-semibold text-zinc-300 transition hover:border-emerald-400/50 hover:text-emerald-300"
-                >
-                  {copied ? (
-                    <>
-                      <CheckCircle size={14} className="text-emerald-400" /> Copied!
-                    </>
-                  ) : (
-                    <>
-                      <Copy size={14} /> Copy
-                    </>
-                  )}
-                </button>
+            {plan.price === 'Coming Soon' ? (
+              <div className="rounded-xl border border-lime-300/15 bg-[#0c110d] p-8 text-center">
+                <p className="text-sm font-semibold uppercase tracking-[.2em] text-zinc-400">Coming Soon</p>
+                <h3 className="mt-3 font-display text-2xl font-bold text-white">{plan.name} Plan</h3>
+                <p className="mt-4 text-zinc-400">This plan is launching soon — join our Discord to get notified and access early releases.</p>
+                <div className="mt-6">
+                  <a href={DISCORD_INVITE} target="_blank" rel="noreferrer"><Button className="clip-button w-full rounded-none py-3">Join Discord for Early Access</Button></a>
+                </div>
               </div>
-            </div>
+            ) : (
+              <>
+                <h2 className="mb-6 font-display text-xl font-semibold text-white">Complete Your Payment</h2>
 
-            {/* Instructions */}
-            <div className="mb-8 space-y-3 text-sm text-zinc-400">
-              <h3 className="font-semibold text-zinc-300">Steps:</h3>
-              <ol className="list-inside list-decimal space-y-1.5">
-                <li>Open your JazzCash app</li>
-                <li>Send <span className="font-semibold text-white">₹{plan.price}</span> to <span className="font-semibold text-white">{JAZZCASH_NUMBER}</span></li>
-                <li>Take a screenshot of the payment confirmation</li>
-                <li>Click the button below to join Discord and submit proof</li>
-              </ol>
-            </div>
+                {/* JazzCash Number */}
+                <div className="mb-8 rounded-xl border border-emerald-300/20 bg-emerald-300/[.04] p-5">
+                  <p className="text-[10px] font-bold uppercase tracking-[.2em] text-emerald-300">Send Payment to JazzCash</p>
+                  <p className="mt-1 text-xs font-medium text-emerald-300/70">Account: Sumaira Naseer</p>
+                  <div className="mt-3 flex items-center gap-3">
+                    <span className="font-display text-2xl font-bold tracking-tight text-white">{JAZZCASH_NUMBER}</span>
+                    <button onClick={handleCopyNumber} className="inline-flex items-center gap-1.5 rounded-lg border border-white/[.08] bg-white/[.04] px-3 py-1.5 text-xs font-semibold text-zinc-300 transition hover:border-emerald-400/50 hover:text-emerald-300">
+                      {copied ? (<><CheckCircle size={14} className="text-emerald-400" /> Copied!</>) : (<><Copy size={14} /> Copy</>)}
+                    </button>
+                  </div>
+                </div>
 
-            {/* Payment Done Button */}
-            <a
-              href={DISCORD_INVITE}
-              target="_blank"
-              rel="noreferrer"
-              className="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-emerald-300 to-lime-300 px-6 py-4 text-sm font-bold uppercase tracking-[.12em] text-emerald-950 shadow-[0_0_32px_rgba(52,211,153,.18)] transition hover:from-emerald-200 hover:to-lime-200"
-            >
-              <CheckCircle size={18} />
-              Payment Done — Join Discord for Verification
-              <ExternalLink size={16} className="transition group-hover:translate-x-0.5" />
-            </a>
+                {/* Instructions */}
+                <div className="mb-8 space-y-3 text-sm text-zinc-400">
+                  <h3 className="font-semibold text-zinc-300">Steps:</h3>
+                  <ol className="list-inside list-decimal space-y-1.5">
+                    <li>Open your JazzCash app</li>
+                    <li>Send <span className="font-semibold text-white">₹{plan.price}</span> to <span className="font-semibold text-white">{JAZZCASH_NUMBER}</span></li>
+                    <li>Take a screenshot of the payment confirmation</li>
+                    <li>Click the button below to join Discord and submit proof</li>
+                  </ol>
+                </div>
 
+                <a href={DISCORD_INVITE} target="_blank" rel="noreferrer" className="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-emerald-300 to-lime-300 px-6 py-4 text-sm font-bold uppercase tracking-[.12em] text-emerald-950 shadow-[0_0_32px_rgba(52,211,153,.18)] transition hover:from-emerald-200 hover:to-lime-200">
+                  <CheckCircle size={18} />
+                  Payment Done — Join Discord for Verification
+                  <ExternalLink size={16} className="transition group-hover:translate-x-0.5" />
+                </a>
 
-            <a
-              href={DISCORD_INVITE}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-3 inline-flex w-full items-center justify-center gap-3 rounded-xl border border-white/[.08] bg-white/[.04] px-6 py-4 text-sm font-semibold uppercase tracking-[.12em] text-zinc-300 transition hover:border-emerald-400/40 hover:text-emerald-300"
-            >
-              <ExternalLink size={16} />
-              Other Payment Method — Join Discord
-            </a>
-
- 
+                <a href={DISCORD_INVITE} target="_blank" rel="noreferrer" className="mt-3 inline-flex w-full items-center justify-center gap-3 rounded-xl border border-white/[.08] bg-white/[.04] px-6 py-4 text-sm font-semibold uppercase tracking-[.12em] text-zinc-300 transition hover:border-emerald-400/40 hover:text-emerald-300">
+                  <ExternalLink size={16} />
+                  Other Payment Method — Join Discord
+                </a>
+              </>
+            )}
           </div>
 
           {/* Footer note */}

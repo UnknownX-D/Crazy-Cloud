@@ -15,7 +15,13 @@ export function Pricing() {
         <h3 className="mt-7 font-display text-xl font-semibold uppercase tracking-tight text-white">{plan.name} Plan</h3><p className="mt-2 text-[11px] text-zinc-500">{plan.detail}.</p>
 
         <div className="mt-12 flex items-end gap-1"><span className="mb-1 text-xl font-semibold text-lime-300">{plan.price === 'Coming Soon' ? '' : '₹'}</span><span className="font-display text-4xl font-bold tracking-[-.06em] text-white">{plan.price}</span><span className="mb-1 text-[10px] text-zinc-500">{plan.price === 'Coming Soon' ? '' : '/14 days'}</span></div>
-        <a href={`/payment/${plan.slug}`} className="mt-8"><Button variant={plan.featured ? 'primary' : 'secondary'} className={`clip-button w-full rounded-none py-3 text-[10px] uppercase tracking-wide ${!plan.featured ? 'border-lime-300/20' : ''}`}>Choose {plan.name} <ArrowRight size={14} /></Button></a>
+        {plan.price === 'Coming Soon' ? (
+          <div className="mt-8">
+            <Button disabled className="clip-button w-full rounded-none py-3 text-[10px] uppercase tracking-wide opacity-50">Coming Soon</Button>
+          </div>
+        ) : (
+          <a href={`/payment/${plan.slug}`} className="mt-8"><Button variant={plan.featured ? 'primary' : 'secondary'} className={`clip-button w-full rounded-none py-3 text-[10px] uppercase tracking-wide ${!plan.featured ? 'border-lime-300/20' : ''}`}>Choose {plan.name} <ArrowRight size={14} /></Button></a>
+        )}
 
         <div className="my-6 h-px bg-lime-300/10" /><ul className="space-y-3.5 flex-1">{plan.features.map(feature => <CheckLine key={feature}>{feature}</CheckLine>)}</ul>
       </motion.article> })}

@@ -8,8 +8,6 @@ export function Pricing() {
 
     <SectionHeading eyebrow="CRAZY CLOUD • SERVER PLANS" title={<>Choose the right <span className="text-gradient">power for your world.</span></>}>Start small, upgrade anytime, and keep every plugin, player, and chunk running smoothly.</SectionHeading>
 
-    <SectionHeading eyebrow="MINECRAFT HOSTING" title={<>Grows <span className="text-gradient">with your world.</span></>}>Start small, upgrade anytime, and keep every plugin, player, and chunk running smoothly.</SectionHeading>
-
     <motion.div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={{ visible: { transition: { staggerChildren: .09 } } }}>
       {minecraftPlans.map((plan) => { const Icon = plan.icon; return <motion.article key={plan.name} variants={reveal} whileHover={{ y: -7 }} className={`relative flex min-h-[500px] flex-col border bg-gradient-to-b p-6 ${plan.featured ? 'border-lime-300/70 from-lime-300/[.1] to-[#0b100c] shadow-[0_0_42px_rgba(163,230,53,.12)]' : 'border-lime-300/20 from-[#111811]/90 to-[#0a0e0b]'}`}>
         {plan.badge && <span className={`absolute right-0 top-0 px-3 py-1.5 text-[8px] font-bold uppercase tracking-[.1em] ${plan.featured ? 'bg-lime-300 text-lime-950' : 'bg-lime-300/90 text-lime-950'}`}>{plan.badge}</span>}
@@ -18,9 +16,6 @@ export function Pricing() {
 
         <div className="mt-12 flex items-end gap-1"><span className="mb-1 text-xl font-semibold text-lime-300">{plan.price === 'Coming Soon' ? '' : '₹'}</span><span className="font-display text-4xl font-bold tracking-[-.06em] text-white">{plan.price}</span><span className="mb-1 text-[10px] text-zinc-500">{plan.price === 'Coming Soon' ? '' : '/14 days'}</span></div>
         <a href={`/payment/${plan.slug}`} className="mt-8"><Button variant={plan.featured ? 'primary' : 'secondary'} className={`clip-button w-full rounded-none py-3 text-[10px] uppercase tracking-wide ${!plan.featured ? 'border-lime-300/20' : ''}`}>Choose {plan.name} <ArrowRight size={14} /></Button></a>
-
-        <div className="mt-12 flex items-end gap-1"><span className="mb-1 text-xl font-semibold text-lime-300">₹</span><span className="font-display text-4xl font-bold tracking-[-.06em] text-white">{plan.price}</span><span className="mb-1 text-[10px] text-zinc-500">/week</span></div>
-        <a href={`/payment/${plan.name.toLowerCase()}`} className="mt-8"><Button variant={plan.featured ? 'primary' : 'secondary'} className={`clip-button w-full rounded-none py-3 text-[10px] uppercase tracking-wide ${!plan.featured ? 'border-lime-300/20' : ''}`}>Choose {plan.name} <ArrowRight size={14} /></Button></a>
 
         <div className="my-6 h-px bg-lime-300/10" /><ul className="space-y-3.5 flex-1">{plan.features.map(feature => <CheckLine key={feature}>{feature}</CheckLine>)}</ul>
       </motion.article> })}

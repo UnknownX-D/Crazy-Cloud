@@ -17,12 +17,12 @@ export const hostingCategories: HostingCategory[] = [
 ]
 
 export const minecraftPlans: Plan[] = [
-  { name: 'Starter', slug: 'starter', price: '69', detail: 'Straightforward hosting for your first server', features: ['CPU: 200%', 'RAM: 4GB', 'Storage: 30GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Basic', slug: 'basic', price: '79', detail: 'A balanced option for growing communities', features: ['CPU: 300%', 'RAM: 6GB', 'Storage: 60GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
-  { name: 'Pro', slug: 'pro', price: '89', detail: 'Great for busy worlds and active players', features: ['CPU: 400%', 'RAM: 8GB', 'Storage: 80GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
-  { name: 'Elite', slug: 'elite', price: '99', detail: 'Built for larger communities and heavier mods', features: ['CPU: 700%', 'RAM: 12GB', 'Storage: 100GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
-  { name: 'Supreme', slug: 'supreme', price: '119', detail: 'High-performance hosting for ambitious setups', features: ['CPU: 1000%', 'RAM: 16GB', 'Storage: 150GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Popular', icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
-  { name: 'Ultimate', slug: 'ultimate', price: '129', detail: 'Our top-tier plan for maximum power', features: ['CPU: 1200%', 'RAM: 18GB', 'Storage: 180GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Top Tier', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+  { name: 'Starter', slug: 'starter', price: '29', detail: 'Straightforward hosting for your first server', features: ['CPU: 200%', 'RAM: 4GB', 'Storage: 20GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Box, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Basic', slug: 'basic', price: '39', detail: 'A balanced option for growing communities', features: ['CPU: 300%', 'RAM: 6GB', 'Storage: 40GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], icon: Boxes, iconStyle: 'border-lime-300/20 bg-lime-300/[.04] text-lime-300' },
+  { name: 'Pro', slug: 'pro', price: '49', detail: 'Great for busy worlds and active players', features: ['CPU: 400%', 'RAM: 8GB', 'Storage: 60GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Most Popular', featured: true, icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Elite', slug: 'elite', price: '59', detail: 'Built for larger communities and heavier mods', features: ['CPU: 500%', 'RAM: 10GB', 'Storage: 80GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'BEST VALUE', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
+  { name: 'Supreme', slug: 'supreme', price: '69', detail: 'High-performance hosting for ambitious setups', features: ['CPU: 600%', 'RAM: 12GB', 'Storage: 100GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Popular', icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
+  { name: 'Ultimate', slug: 'ultimate', price: '79', detail: 'Our top-tier plan for maximum power', features: ['CPU: 700%', 'RAM: 14GB', 'Storage: 120GB SSD', '99.9% Uptime Guarantee', 'DDoS Protection'], badge: 'Top Tier', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
   { name: 'Coming Soon', slug: 'coming-soon-1', price: 'Coming Soon', detail: 'More premium options are on the way', features: ['Custom upgrades', 'Priority availability', 'Launch soon'], badge: 'Coming Soon', icon: Shield, iconStyle: 'border-slate-400/35 bg-slate-400/[.06] text-slate-300' },
   { name: 'Coming Soon', slug: 'coming-soon-2', price: 'Coming Soon', detail: 'Another high-end plan is being prepared', features: ['Expanded capacity', 'Advanced resources', 'Launch soon'], badge: 'Coming Soon', icon: Coins, iconStyle: 'border-amber-400/40 bg-amber-400/[.08] text-amber-300' },
 ]
@@ -64,19 +64,19 @@ export const stats = [
 ]
 
 export const comparisonRows = [
-  ['Starter', '4GB', '200% CPU', '30GB SSD', 'Unlimited', 'Basic', 'Starter Tier'],
+  ['Starter', '4GB', '200% CPU', '20GB SSD', 'Unlimited', 'Basic', 'Starter Tier'],
 
-  ['Basic', '6GB', '300% CPU', '60GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
-  ['Pro', '8GB', '400% CPU', '80GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
-  ['Elite', '12GB', '700% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
-  ['Supreme', '16GB', '1000% CPU', '150GB SSD', 'Unlimited', 'Premium', 'High Performance Tier'],
-  ['Ultimate', '18GB', '1200% CPU', '180GB SSD', 'Unlimited', 'Premium', 'Max Performance Tier'],
+  ['Basic', '6GB', '300% CPU', '40GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
+  ['Pro', '8GB', '400% CPU', '60GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
+  ['Elite', '10GB', '500% CPU', '80GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
+  ['Supreme', '12GB', '600% CPU', '100GB SSD', 'Unlimited', 'Premium', 'High Performance Tier'],
+  ['Ultimate', '14GB', '700% CPU', '120GB SSD', 'Unlimited', 'Premium', 'Max Performance Tier'],
   ['Coming Soon', '—', '—', '—', '—', '—', 'Upcoming Tier'],
   ['Coming Soon', '—', '—', '—', '—', '—', 'Upcoming Tier'],
 
-  ['Pro', '6GB', '300% CPU', '60GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
-  ['Elite', '8GB', '400% CPU', '80GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
-  ['Supreme', '12GB', '700% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
+  ['Pro', '8GB', '400% CPU', '60GB SSD', 'Unlimited', 'Priority', 'Community Tier'],
+  ['Elite', '10GB', '500% CPU', '80GB SSD', 'Unlimited', 'Advanced', 'Network Tier'],
+  ['Supreme', '12GB', '600% CPU', '100GB SSD', 'Unlimited', 'Premium', 'Enterprise Tier'],
 
 ]
 
